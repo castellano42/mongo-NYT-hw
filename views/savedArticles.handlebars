@@ -1,0 +1,14 @@
+{{> header }}
+
+	{{#each articles }}
+		<div class="row article-item">
+			<div class="row">
+				{{title}}
+				<div class="btn btn-primary delete-article-btn">Delete Article</div>
+			</div>
+			 {{description}}
+		</div>
+	{{/each}}
+
+
+{{> footer}}

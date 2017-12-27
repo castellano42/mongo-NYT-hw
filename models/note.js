@@ -1,57 +1,23 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var ObjectId = Schema.ObjectId;
 
-var Note = new Schema({
-    article        : ObjectId,
-    note           : String,
-    date           : Date
+// Using the Schema constructor, create a new NoteSchema object
+// This is similar to a Sequelize model
+var NoteSchema = new Schema({
+  // `title` is of type String
+  title: String,
+  // `body` is of type String
+  body: String
 });
 
 
-
-var note = {
-  all: function(callback) {
-
-  },
-  // The variables cols and vals are arrays.
-  create: function(cols, vals, callback) {
-
-  },
-  update: function(objColVals, condition, callback) {
-
-  },
-  // delete: function()
-}
-
-module.exports = note;
+var Note = mongoose.model("Note", NoteSchema);
 
 
-//  $.ajax({
-//     method: "GET",
-//     url: "/articles/" + thisId
-//   })
-//     // With that done, add the note information to the page
-//     .done(function(data) {
-//       console.log(data);
-//       // The title of the article
-//       $("#notes").append("<h2>" + data.title + "</h2>");
-//       // An input to enter a new title
-//       $("#notes").append("<input id='titleinput' name='title' >");
-//       // A textarea to add a new note body
-//       $("#notes").append("<textarea id='bodyinput' name='body'></textarea>");
-//       // A button to submit a new note, with the id of the article saved to it
-//       $("#notes").append("<button data-id='" + data._id + "' id='savenote'>Save Note</button>");
+module.exports = Note;
 
-//       // If there's a note in the article
-//       if (data.note) {
-//         // Place the title of the note in the title input
-//         $("#titleinput").val(data.note.title);
-//         // Place the body of the note in the body textarea
-//         $("#bodyinput").val(data.note.body);
-//       }
-//     });
-// };
+
+ 
 
 // app.post("/articles/:id", function(req, res) {
 //   // Create a new note and pass the req.body to the entry
