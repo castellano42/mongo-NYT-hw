@@ -1,0 +1,28 @@
+{
+  "name": "mongo-nyt-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castellano42/mongo-NYT-hw.git"
+  },
+  "author": "andrew castellano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/castellano42/mongo-NYT-hw/issues"
+  },
+  "homepage": "https://github.com/castellano42/mongo-NYT-hw#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.14.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "mongoose": "^4.13.7",
+    "request": "^2.83.0"
+  }
+}

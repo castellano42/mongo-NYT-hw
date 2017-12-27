@@ -1,0 +1,25 @@
+.jumbotron{
+	background-color: red;
+}
+
+#newArticlesButton{
+	background-color: red;
+	color:white;
+}
+
+#navbar{
+	background:skyblue;
+}
+
+#mainheading{
+	color:white;
+}
+
+#subHeading{
+	color:white;
+}
+
+.article-item {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
