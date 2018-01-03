@@ -22,4 +22,7 @@
 .article-item {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background-color:red;
+	color:white;
+	padding:2%;
 }
